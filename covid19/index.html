@@ -23,19 +23,36 @@
         <img src="amour.png" height="60" style="margin-left:auto; display:block; border-right: 1px solid #000;" onclick="showmap()">
         <img src="startup_odisha.png" height="60" style="margin-right:auto; margin-left:10px; display:block">
     </nav>
+    
+    <!-- Front page -->
+    <section id="showcase">
+        <div class="container">
+            <h1 style="font-size:70px; text-shadow: 4px 4px 10px rgb(0, 4, 44)">COVID 19</h1>
+            <h3>Digital Screening Live</h3>
+            <h3>ଡିଜିଟାଲ୍ ସ୍କ୍ରିନିଂ ଲାଇଭ୍</h3>
+            <div class="button"><a href="chatbot/index.html?lang=eng"><b>Screen Now</b></a></div>
+            <div class="button"><a href="chatbot/index.html?lang=odia"><b>ସ୍କ୍ରିନ୍ ବର୍ତ୍ତମାନ</b></a></div>
+        </div>
+    </section>
+    <hr size=3>
 
-    <!-- Odisha Covid19 Tracker (Brought to top as said by chandan)-->
-    <div id="tracker" class="mt-4">
+    <!-- Odisha Covid19 Tracker -->
+    <div id="tracker">
         <h2>Odisha Covid 19 Tracker</h2>
         <h2>ଓଡିଶା କୋଭିଡ୍ 19 ଟ୍ରାକର୍</h2>
         <br>
-        <div class="word ml-5">
-            <div class="covid-card c-danger"><label class="text-danger font-weight-bold">Confirmed(ନିଶ୍ଚିତ) </label> <h5 id="confirmed" style="color:rgb(255,8,59)"></h5></div>
-            <div class="covid-card c-active"><label class="text-primary font-weight-bold">Active(ସକ୍ରିୟ)</label> <h5 id="active" style="color:rgb(1,124,255)"></h5></div>
-            <div class="covid-card c-recovered"><label class="text-success font-weight-bold">Recovered(ସୁସ୍ଥ)</label> <h5 id="recovered" style="color:rgb(41,167,70)"></h5></div>
-            <div class="covid-card c-deceased"><label class="text-dark font-weight-bold">Deceased(ମୃତ)</label> <h5 id="deceased" style="color:rgb(109,118,126)"></h5></div>
+        <div class="word">
+            <h2 style="color:rgba(255,8,59,0.5)">Confirmed<br>ନିଶ୍ଚିତ କର</h2>
+            <h2 style="color:rgba(1,124,255,0.5)">Active<br>ସକ୍ରିୟ</h2>
+            <h2 style="color:rgba(41,167,70,0.5)">Recovered<br>ପୁନରୁଦ୍ଧାର</h2>
+            <h2 style="color:rgba(109,118,126,0.5)">Deceased<br>ମୃତ</h2>
         </div>
-
+        <div>
+            <h2 id="confirmed" style="color:rgb(255,8,59)"></h2>
+            <h2 id="active" style="color:rgb(1,124,255)"></h2>
+            <h2 id="recovered" style="color:rgb(41,167,70)"></h2>
+            <h2 id="deceased" style="color:rgb(109,118,126)"></h2>
+        </div>
 
         <!-- Odisha map -->
         <svg id="chart" width="300" height="350" viewBox="0 0 480 450" preserveAspectRatio="xMidYMid meet">
@@ -136,7 +153,7 @@
         <div id="district-info" style="font-size: 25px; color: brown; font-weight: 700;">Odisha</div>
 
         <section id="district-section">
-            <button class="accordion" id="district-accordion" style="padding:5px; font-size: 15px;text-align: center;"><b>District Info</b></button>
+            <button class="accordion" id="district-accordion" id="" style="padding:5px; font-size: 15px;text-align: center;"><b>District Info</b></button>
             <div class = "panel" id="district-panel">
                 <table id="district-table">
                     <tr>
@@ -163,45 +180,23 @@
             </div>
         </section>
     </div>
-    
-    <!-- Front page (Changed As said by Chandan)-->
-
-        <section id="showcase">
-            <div class="grid-cards">
-            <div class="container">
-
-                <div class="consult">
-                    <img src="../doctor.png">  
-                </div>
-
-                <div class="inner-content">
-                    <h1 style="font-size:70px; text-shadow: 4px 4px 10px rgb(0, 4, 44)">COVID 19</h1>
-                    <h3>Digital Screening Live</h3>
-                    <h3>ଡିଜିଟାଲ୍ ସ୍କ୍ରିନିଂ ଲାଇଭ୍</h3>
-                    <div class="button"><a href="chatbot/index.html?lang=eng"><b>Screen Now</b></a></div>
-                    <div class="button"><a href="chatbot/index.html?lang=odia"><b>ସ୍କ୍ରିନ୍ ବର୍ତ୍ତମାନ</b></a></div>
-                </div>
-            </div>
-            </div>
-        </section>
-        
-        <div class="w-100">
-            <!-- Health image -->
-            <div class="card-body">
-                <section id="special">
-                    <img src="tag.png" width="100%">
-                </section>
-                <br>
-                <!-- Specialists -->
-                <div id="specialist">
-                    <div id="specialistpage"><button onclick="window.location.href = 'specialist/index.html';"><b>Call a Specialist<br>ଜଣେ ବିଶେଷଜ୍ଞଙ୍କୁ କଲ୍ କରନ୍ତୁ</b></button></div><br>
-                    <div id="medicinestores"><button onclick="window.location.href = 'medicine_store_revamped/index.html';"><b>View Medicine stores<br>ନିକଟସ୍ଥ ମେଡିସିନ୍ ଦୋକାନ ଦେଖନ୍ତୁ</b></button></div><br>
-                </div>
-            </div>
-        </div>
-       
-
+    <br>
     <hr size=3>
+    
+    <!-- Health image -->
+    <section id="special">
+        <img src="tag.png" width="100%">
+    </section>
+    <br>
+    
+
+    <!-- Specialists -->
+    <div id="specialist">
+        <div id="specialistpage"><button onclick="window.location.href = 'specialist/index.html';"><b>Call a Specialist<br>ଜଣେ ବିଶେଷଜ୍ଞଙ୍କୁ ଡାକନ୍ତୁ</b></button></div><br>
+        <div id="medicinestores"><button onclick="window.location.href = 'medicine_store_revamped/index.html';"><b>View Medicine stores<br>ମେଡିସିନ୍ ଷ୍ଟୋରଗୁଡିକ ଦେଖନ୍ତୁ</b></button></div><br>
+    </div>
+    <hr size=3>
+
 
     <!-- Twitter -->
     <div class="twitter-amour">
