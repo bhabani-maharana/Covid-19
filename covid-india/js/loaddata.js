@@ -127,7 +127,7 @@ function loaddata() {
 			{ y: parseInt(activeCases), label: "Active Cases" },
 			{ y: parseInt(deathCases), label: "Death Cases" },
 			{ y: parseInt(recovCases), label: "Recovered Cases" },
-			{ y: parseInt(confCases), label: "Confirmed Cases"},
+			// { y: parseInt(confCases), label: "Confirmed Cases"},
 		]
 	}]
 });
