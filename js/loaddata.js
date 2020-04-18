@@ -121,7 +121,7 @@ function loaddata() {
         radius: "65%",
 		//innerRadius: 60,
 		indexLabelFontSize: 15,
-		indexLabel: "{label} - #percent%",
+		indexLabel: "{label}  #percent%",
 		toolTipContent: "<b>{label}:</b> {y} (#percent%)",
 		dataPoints: [
 			{ y: parseInt(activeCases), label: "Active Cases" },
