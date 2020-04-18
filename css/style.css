@@ -424,9 +424,43 @@ footer {
 #gap {
     display: block;
 }
-
+.carousel-item img 
+{
+    width: 100%;
+}
+.carousel
+{
+    width: 50%;
+}
 @media only screen and (max-width:650px) {
     #gap {
         display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar-header
+    {
+        width: 60%;
+        float: left;
+        display: contents;
+    }
+    .top-header
+    {
+        display: inline-flex;
+    }
+    .download-btn
+    {
+        float: right;
+        right: 0;
+    }
+    .carousel
+    {
+        width: 100%;
+        margin: 0;
+    }
+    .carousel img
+    {
+        width: 100%;
     }
 }
